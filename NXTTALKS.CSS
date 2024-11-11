@@ -1,0 +1,398 @@
+@import url('https://fonts.googleapis.com/css2?family=Bree+Serif&family=Caveat:wght@400;700&family=Lobster&family=Monoton&family=Open+Sans:ital,wght@0,400;0,700;1,400;1,700&family=Playfair+Display+SC:ital,wght@0,400;0,700;1,700&family=Playfair+Display:ital,wght@0,400;0,700;1,700&family=Roboto:ital,wght@0,400;0,700;1,400;1,700&family=Source+Sans+Pro:ital,wght@0,400;0,700;1,700&family=Work+Sans:ital,wght@0,400;0,700;1,700&display=swap');
+
+* {
+    font-family: Sans-Serif;
+}
+
+.bg-container { /*background for page1*/
+    background:
+        linear-gradient(to right, black 50%, grey 100%);
+    padding: 20px;
+    height: 100vh;
+}
+
+.logo {       /*styling for Nxttalks logo*/
+    margin-top: 30px;
+}
+
+.card-logo {
+    text-align: right;
+}
+
+.bynxtwave {         /*styling for nxttalks logo*/
+    padding-left: 160px;
+    font-size: 15px;
+}
+
+.home-h1 {          /*styling for headings in large devices*/
+    font-size: 50px;
+    padding-top: 30px;
+    font-weight: 700;
+}
+
+.rem-h1 {
+    font-size: 45px;
+    font-weight: bold;
+}
+
+.green {
+    color: #4cd964;
+}
+
+.btn-1 {             /*styling for claim access button*/
+    margin-top: 30px;
+    color: white;
+    padding: 7px;
+    background-color: #2563EB;
+    text-align: center;
+    width: 300px;
+    font-size: 15px;
+    border-radius: 10px;
+    height: 40px;
+}
+
+.btn-2 {            /*styling for watch trailer button*/
+    background-color: transparent;
+    text-align: center;
+    font-size: 15px;
+    border-radius: 10px;
+    height: 40px;
+    margin-top: 20px;
+    border-style: solid;
+    color: white;
+    width: 300px;
+    border-color: white;
+    border-width: 2px;
+}
+
+.discount {
+    text-decoration: line-through solid 3px #5eeb6c;
+}
+
+.home-h2 {
+    font-size: 16px;
+}
+
+.bg-container2 {      /*styling for page 2*/
+    background-color: #0c132b;
+}
+
+/*styling for scrolling company logos*/
+.companies {          
+    width: 100%;
+    height: 50px;
+}
+
+.scroll-container {
+    overflow: hidden;
+    white-space: nowrap;
+    width: 100%;
+    position: relative;
+}
+
+/* Styling for the images */
+.scroll-container img {
+    width: auto;
+    height: 50;
+    display: inline-flex;
+    animation: scroll 20s linear infinite;
+}
+
+/* Keyframes for scrolling effect */
+@keyframes scroll {
+    from {
+        transform: translateX(0);
+    }
+
+    to {
+        transform: translateX(-50%);
+    }
+}
+
+.comp-h1 {
+    /*Css for Headings in Medium and Small Devices*/
+    font-size: 24px;
+    text-align: center;
+    font-weight: bold;
+}
+
+.bg-container3 {
+    /*Background for page 3*/
+    background: #0A2540;
+    /* Base color */
+    background:
+        linear-gradient(to bottom right,
+            rgba(0, 128, 0, 0.5),
+            /* Top-left green with 30% opacity */
+            rgba(0, 0, 0, 0),
+            /* Center transparent */
+            rgba(240, 197, 122, 0.5)
+            /* Bottom-right red with 30% opacity */
+        ),
+        #0A2540;
+    text-align: center;
+    padding: 30px;
+}
+
+.speakers-p {
+    font-size: 18px;
+    color: #CBD5E1;
+}
+
+@media screen and (max-width:576px) {   /*Media Queries for responsiveness in large devices*/
+    .speakers-p {
+        font-size: 14px;
+    }
+
+    .h3 {
+        font-size: 14px;
+    }
+
+    .button-container {
+        display: flex;
+        overflow-x: auto;
+        gap: 8px;
+        padding: 10px;
+        -webkit-overflow-scrolling: touch;
+        scroll-behavior: smooth;
+    }
+
+    .button-container button {
+        flex: 0 0 auto;
+        padding: 10px 20px;
+        text-align: center;
+    }
+
+    .button-container::-webkit-scrollbar {
+        display: none;
+    }
+
+    .card-h4 {  
+        color: #F8FAFC;
+        font-size: 18px;
+        font-family: sans-serif;
+    }
+
+    .btn-fb {   /*styling for 25000 feedbacks button*/
+        font-size: 14px;
+    }
+
+    .btn-icon {  /*styling for smile icon in feedbacks section*/
+        height: 20px;
+        width: 20px;
+    }
+
+    .bg-container5 {     /*Styling for page 5 background*/
+        background-image: url("https://cdn.prod.website-files.com/64362e90abbff481a6d25ce8/64362e90abbff4e843d25fd4_NxtWave's%20Empowering%20Podcast%20Series%20%20to%20Shape%20your%20Dream%20Career.%20(1).png");
+        padding: 10px;
+        background-size: cover;
+        text-align: left;
+    }
+
+    .form-container {
+       align-items:flex-start;
+    }
+
+    .h5 {
+        font-size: 13px;
+    }
+
+    .card {
+        max-width: 300px;
+        height: 250px;
+    }
+    .input{
+        width:200px;
+        height:40px;
+    }
+}
+
+.trending {
+    border-radius: 25px;
+    border-width: 0px;
+    margin-right: 10px;
+    width: 8rem;
+    padding: 5px;
+    text-align: center;
+    background-color: white;
+}
+
+.butns {
+    background-color: transparent;
+    border-style: solid;
+    padding-left: 10px;
+    font-size: 15px;
+    padding-right: 10px;
+    text-align: center;
+    border-width: 1px;
+    margin-right: 15px;
+    border-color: white;
+    border-radius: 27px;
+}
+
+.card-container {
+    display: flex;
+    gap: 16px;
+    overflow-x: auto;
+    flex-wrap: nowrap;
+    -webkit-overflow-scrolling: touch;
+    scroll-snap-type: x mandatory;
+    padding-bottom: 10px;
+    width: 100%;
+}
+
+.card-1 {
+    background-color: #334155;
+    border-radius: 10px;
+    margin-top: 50px;
+    max-width: 300px;
+    flex-shrink: 0;
+    box-sizing: border-box;
+    scroll-snap-align: start;
+    padding: 16px;
+}
+
+.card-img-1 {
+    width: 100%;
+    border-radius: 8px;
+    height: auto;
+    max-height: 150px;
+    object-fit: cover;
+    margin-bottom: 12px;
+}
+
+.card-h4 {
+    color: #F8FAFC;
+    font-size: 20px;
+    font-family: sans-serif;
+    margin-bottom: 8px;
+}
+
+.card-content {
+    color: #CBD5E1;
+    text-align: left;
+    font-size: 16px;
+    line-height: 1.4;
+}
+
+.card-content a {
+    color: #3B82F6;
+    text-decoration: none;
+    font-weight: 500;
+}
+
+.card-content a:hover {
+    text-decoration: underline;
+}
+
+.card-container::-webkit-scrollbar {
+    height: 8px;
+}
+
+.card-container::-webkit-scrollbar-thumb {
+    background-color: #888;
+    border-radius: 4px;
+}
+
+@media screen and (min-width: 992px) {
+    .card-container {
+        display: flex;
+        flex-wrap: nowrap;
+    }
+
+    .card-1 {
+        width: 320px;
+    }
+}
+
+.bg-container4 {
+    background-color: #0F172A;
+    text-align: center;
+}
+
+.btn-fb {
+    border-radius: 25px;
+    border-style: solid;
+    background-color: transparent;
+    border-color: #F59E0B;
+    width: 300px;
+    font-weight: bold;
+    font-size: 18px;
+    color: #F59E0B;
+    padding: 8px;
+}
+
+.btn-icon {
+    height: 30px;
+    width: 30px;
+}
+
+.bg-container5 { /* styling for page 5 background*/
+    background-image: url("https://cdn.prod.website-files.com/64362e90abbff481a6d25ce8/64362e90abbff4e843d25fd4_NxtWave's%20Empowering%20Podcast%20Series%20%20to%20Shape%20your%20Dream%20Career.%20(1).png");
+    height: 100vh;
+    background-size: cover;
+    text-align: left;
+}
+
+.bg-container6 {   /*styling for page 6 background*/
+    background-color: #0F172A;
+    padding: 60px;
+    height: 70vh;
+}
+
+.btn-otp {     /*styling for button otp*/
+    width: 300px;
+    height: 40px;
+    border-radius: 8px;
+    border-width: 0px;
+    text-align: center;
+    padding: 8px;
+}
+
+.input {        /*styling for claim podcast form*/
+    width: 300px;
+    height: 40px;
+    background-color: #334155;
+    border-radius: 8px;
+    border-style: solid;
+    border-color: grey;
+    padding: 8px;
+}
+
+.bg-container7 {      /*styling for page 7 container*/
+    background-color: #334155;
+}
+
+.bg-container8 {      /*styling for page 8 container*/
+    background-color: #0F172A;
+    padding-top: 50px;
+}
+
+.f-h {
+    font-weight: bold;
+}
+
+.f-p {
+    color: grey;
+    font-family: sans-serif;
+}
+
+.f-p:hover {
+    color: white;
+    text-decoration: none;
+}
+
+.footer-rule {
+    border-style: solid;
+    border-color: grey;
+    border-width: 1px;
+    width: 100%;
+}
+
+.card {
+    background-color: #334155;
+    border-radius: 20px;
+    max-width: 400px;
+    height: auto;
+    margin: 10px;
+}
