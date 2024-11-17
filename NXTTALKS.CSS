@@ -65,7 +65,7 @@
     border-width: 2px;
 }
 
-.discount {
+.discount {      /*styling for the line through 2000*/
     text-decoration: line-through solid 3px #5eeb6c;
 }
 
