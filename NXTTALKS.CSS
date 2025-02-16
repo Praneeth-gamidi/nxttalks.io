@@ -50,6 +50,11 @@
     border-radius: 10px;
     height: 40px;
 }
+.btn-1:hover{
+    background-color:blue;
+    font-weight:bold;
+    color:white;
+}
 
 .btn-2 {            /*styling for watch trailer button*/
     background-color: transparent;
@@ -63,6 +68,9 @@
     width: 300px;
     border-color: white;
     border-width: 2px;
+}
+.btn-2:hover {
+    background-color: #999797;
 }
 
 .discount {      /*styling for the line through 2000*/
@@ -191,6 +199,7 @@
 
     .form-container {
        align-items:flex-start;
+       color:white;
     }
 
     .h5 {
@@ -353,6 +362,7 @@
     width: 300px;
     height: 40px;
     background-color: #334155;
+    color:white;
     border-radius: 8px;
     border-style: solid;
     border-color: grey;
